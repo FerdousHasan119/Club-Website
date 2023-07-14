@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.1.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Sep 20, 2022 at 08:15 AM
+- Server version: 10.4.21-MariaDB
+- PHP Version: 8.0.12
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="club" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="admini">
+                CREATE TABLE `admini` (
+                  `id` int(10) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(50) NOT NULL,
+                  `email` varchar(100) NOT NULL,
+                  `pass` varchar(100) NOT NULL,
+                  `contact` varchar(20) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="blog">
+                CREATE TABLE `blog` (
+                  `id` int(10) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(50) NOT NULL,
+                  `email` varchar(100) NOT NULL,
+                  `title` varchar(200) NOT NULL,
+                  `content` varchar(5000) NOT NULL,
+                  `time` date NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="contact">
+                CREATE TABLE `contact` (
+                  `id` int(10) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(50) NOT NULL,
+                  `position` varchar(30) NOT NULL,
+                  `email` varchar(30) NOT NULL,
+                  `whtsapp_no` varchar(20) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="event">
+                CREATE TABLE `event` (
+                  `id` int(10) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(50) NOT NULL,
+                  `details` varchar(1000) NOT NULL,
+                  `e_time` date NOT NULL,
+                  `location` varchar(100) NOT NULL,
+                  `img` longblob NOT NULL,
+                  `participant` int(50) NOT NULL DEFAULT 0,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="mrequest">
+                CREATE TABLE `mrequest` (
+                  `id` int(10) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(50) NOT NULL,
+                  `email` varchar(50) NOT NULL,
+                  `stdid` varchar(20) NOT NULL,
+                  `department` varchar(50) NOT NULL,
+                  `contact` varchar(20) NOT NULL,
+                  `tnxID` varchar(30) NOT NULL,
+                  `status` varchar(20) DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'club'
+    -->
+    <database name="club">
+        <!-- Table admini -->
+        <table name="admini">
+            <column name="id">1</column>
+            <column name="name">Arefin Aapta</column>
+            <column name="email">aabian@gmail.com</column>
+            <column name="pass">1234</column>
+            <column name="contact">0167941544651</column>
+        </table>
+        <table name="admini">
+            <column name="id">3</column>
+            <column name="name">Md Ferdous Hasan</column>
+            <column name="email">ferdoushasan119@gmail.com</column>
+            <column name="pass">1234</column>
+            <column name="contact">01921735992</column>
+        </table>
+        <!-- Table blog -->
+        <table name="blog">
+            <column name="id">3</column>
+            <column name="name">Arefin Aapta</column>
+            <column name="email">aabian@gmail.com</column>
+            <column name="title">NIAAA Scientists Unveil New Definition of Recovery from Alcohol Use Disorder</column>
+            <column name="content"> Scientists at the National Institute on Alcohol Abuse and Alcoholism (NIAAA) have released a new definition of recovery from alcohol use disorder (AUD) that addresses limitations associated with prior AUD recovery definitions and lays the groundwork for future recovery-related research. In a recent review article, Brett Hagman, Ph.D., Dan Falk, Ph.D., Raye Litten, Ph.D., and NIAAA Director George F. Koob, Ph.D., explain that:
+
+Recovery is a process through which an individual pursues both remission from AUD and cessation from heavy drinking. Recovery can also be considered an outcome such that an individual may be considered ‘recovered’ if both remission from AUD and cessation from heavy drinking are achieved and maintained over time. For those experiencing alcohol-related functional impairment and other adverse consequences, recovery is often marked by the fulfillment of basic needs, enhancements in social support and spirituality, and improvements in physical and mental health, quality of life, and other dimensions of well-being. Continued improvement in these domains may, in turn, promote sustained recovery.
+
+With input from key recovery stakeholders, such as researchers, clinicians, and recovery specialists, NIAAA developed this definition to provide a framework for advancing recovery research and the treatment of AUD. This definition extends prior ones by incorporating key, empirically supported alcohol-related processes, such as remission from Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (commonly known as DSM-5) AUD and cessation from heavy drinking. And by not requiring abstinence for a successful outcome, the new definition recognizes that recovery is an ongoing process.
+
+The new definition of recovery will allow for more consistency across AUD research. NIAAA expects to refine the definition as research continues to improve the understanding of how well-being and biopsychosocial functioning, remission from AUD, and cessation from heavy drinking affect recovery.</column>
+            <column name="time">2022-09-15</column>
+        </table>
+        <table name="blog">
+            <column name="id">4</column>
+            <column name="name">Arefin Aapta</column>
+            <column name="email">aabian@gmail.com</column>
+            <column name="title">Liangzhu, Venice of the Stone Age, Collapsed Due To Climate Change</column>
+            <column name="content"> In the Yangtze Delta, about 160 kilometres southwest of Shanghai, the archeological ruins of Liangzhu City are located. There, a highly advanced culture blossomed about 5,300 years ago, thanks to the engineering of large hydraulic structures.
+
+The walled city had a complex system of navigable canals, dams and water reservoirs. This system made it possible to cultivate very large agricultural areas throughout the year. In the history of human civilization, it is one of the first examples of highly developed communities based on a water infrastructure.
+
+And they did it all without metal.
+
+Long undiscovered, the archaeological site is now considered a well-preserved record of Chinese civilisation dating back more than 5000 years and was declared a UNESCO World Heritage Site in 2019. However, the advanced civilization of this city came to an abrupt end.
+Caves and their deposits, such as dripstones, are among the most important climate archives that exist. They allow the reconstruction of climatic conditions above the caves up to several 100,000 years into the past. Since it is still not clear what caused the sudden collapse of the Liangzhu culture, the research team searched for suitable archives in order to investigate a possible climatic cause of this collapse.
+The massive monsoon rains probably led to such severe flooding of the Yangtze and its branches that even the sophisticated dams and canals could no longer withstand these masses of water, destroying Liangzhu City and forcing people to flee. The very humid climatic conditions continued intermittently for another 300 years, as the geologists show from the cave data.</column>
+            <column name="time">2022-09-15</column>
+        </table>
+        <table name="blog">
+            <column name="id">5</column>
+            <column name="name">Arefin Aapta</column>
+            <column name="email">aabian@gmail.com</column>
+            <column name="title">How a Landmark Physics paper from the 1970s Uncannily Describes the COVID-19 Pandemic</column>
+            <column name="content"> In trying to make sense of this rapidly changing COVID-19 world, I reflected on the recent passing of one of the great physicists of our time, my former Princeton colleague and Nobel laureate, the late Phil Anderson. Anderson made seminal contributions to our understanding of fundamental interactions that make up matter, but to many scientists (and the public) he may be best known for an article he wrote called More Is Different, which describes how at different levels of complexity, new conceptual frameworks are required. He lays out this picture from the bottom up, by thinking about symmetries in the laws of physics and the forms of matter they describe.
+But now that cases are found in nearly every country, the aim to isolate affected social contact networks is impossible. It has become essential to clip all interactions, de-networking the entire system with extreme social distancing. As the scale of the pandemic increases, it requires new ways of thinking about the problem, going from the level of individuals, to the isolation of whole regions or groups of people, and then reverting back to a focus on the individual level.
+
+The destructive information encoded in the virus transformed the entire system, and it continues to do so not only at the level of containment, but also in our attempts at biomedical intervention. In the earliest stages of its outbreak, so little was known about COVID-19 that little could be done. As the scale of the pandemic has grown, logistical issues have emerged—finding enough hospital beds, respirators, as well as face masks and other PPE—with disruptions to supply chain networks snowballing.  </column>
+            <column name="time">2022-09-18</column>
+        </table>
+        <table name="blog">
+            <column name="id">6</column>
+            <column name="name">Arefin Aapta</column>
+            <column name="email">aabian@gmail.com</column>
+            <column name="title">Searching the skies for the building blocks of life in the universe</column>
+            <column name="content"> The time has come for the James Webb Space Telescope to take exoplanet astronomy to the outer reaches. European researchers have been doing a lot of groundwork in preparation for this moment.
+
+BY MICHAEL ALLEN
+
+Since its 25 December 2021 launch aboard an Ariane 5 rocket from French Guiana and following 30 years in the making, the James Webb Space Telescope (JWST) is the Christmas Day gift to astronomers that keeps on giving.
+
+Like many astronomers in Europe, Pierre-Olivier Lagage, an astrophysicist at the Paris-based French Alternative Energies and Atomic Energy Commission (CEA), has been preparing for JWST for years.
+
+A joint project with NASA, the Canadian Space Agency (CSA) and the European Space Agency (ESA), JWST started beaming back its first images of the cosmos in July 2022 after arriving at its vantage point 1.5 million kilometres from the Earth and unfurling its distinctive giant sunshield.
+
+A worthy successor to the iconic Hubble Space Telescope, the €10 billion JWST has big scientific goals. These include the study of the early universe shortly after the Big Bang, galaxies and star formation, black holes, our own solar system and the search for the building blocks of life in the universe.</column>
+            <column name="time">2022-09-18</column>
+        </table>
+        <!-- Table contact -->
+        <table name="contact">
+            <column name="id">1</column>
+            <column name="name">Arefin Ittesafun Aapta</column>
+            <column name="position">President</column>
+            <column name="email">aabian@gmail.com</column>
+            <column name="whtsapp_no">+8801778620991</column>
+        </table>
+        <table name="contact">
+            <column name="id">2</column>
+            <column name="name">Ferdous Hasan</column>
+            <column name="position">Communication Executive</column>
+            <column name="email">mhasan@gmail.com</column>
+            <column name="whtsapp_no">+8801921734998</column>
+        </table>
+        <!-- Table event -->
+        <table name="event">
+            <column name="id">8</column>
+            <column name="name">Instant Expert: Understanding your brain</column>
+            <column name="details">At this event, six expert speakers will guide you on a tour of the most fascinating object in the known universe. On the way you’ll learn how our brains learn language, how they store memories and why they need to sleep. You’ll look at the mystery of consciousness and how our brains perceive our bodies.</column>
+            <column name="e_time">2022-09-22</column>
+            <column name="location">London</column>
+            <column name="img">2.jpg</column>
+            <column name="participant">5</column>
+        </table>
+        <table name="event">
+            <column name="id">9</column>
+            <column name="name">Science Fair</column>
+            <column name="details">A science project is an educational activity for students involving experiments or construction of models in one of the science disciplines. Students may present their science project at a science fair, so they may also call it a science fair project.</column>
+            <column name="e_time">2022-09-30</column>
+            <column name="location">United International University</column>
+            <column name="img">2.jpg</column>
+            <column name="participant">6</column>
+        </table>
+        <!-- Table mrequest -->
+        <table name="mrequest">
+            <column name="id">9</column>
+            <column name="name">Abian</column>
+            <column name="email">abiannnnn@gmail.com</column>
+            <column name="stdid">5565656565</column>
+            <column name="department">CSE</column>
+            <column name="contact">5645464646341</column>
+            <column name="tnxID">454646</column>
+            <column name="status">NULL</column>
+        </table>
+    </database>
+</pma_xml_export>
